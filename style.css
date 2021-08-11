@@ -3,9 +3,12 @@
     padding: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pexels-veeterzy-303383.jpg); 
+}
 header{
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pexels-veeterzy-303383.jpg);
-    height: 100vh;
+    /*background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pexels-veeterzy-303383.jpg);*/
+    height: 80vh;
     background-size: cover;
     background-position: center;
 }
@@ -18,7 +21,7 @@ ul li{
     display: inline-block;
 }
 ul li.active a{
-    background-color: grey;
+    background-color: white;
     color: brown;
 }
 ul li a{
@@ -37,26 +40,33 @@ ul li a:hover{
     margin-top: 15px;
     margin-left: 5px;
     float: left;
-    width: 150px;
+    width: 100px;
     height: auto;
 }
+
 .main{
     max-width: 1200px;
 }
 .title{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 32%;
     transform: translate(-50%,-50%);
 }
 .title h1{
+    /*top: 40%;
+    left: 40%;*/
     color: wheat;
     font-size: 50px;
 }
+.title h1 .rono{
+    color: rgb(240, 135, 93);
+}
+
 .button{
     position: absolute;
-    top: 70%;
-    left: 40%;
+    top: 80%;
+    left: 21%;
     transform: translate(-50%,-50%);
 }
 .btn{
@@ -66,7 +76,53 @@ ul li a:hover{
     text-decoration: none;
     transition: 0.6s ease;
 }
+
 .btn:hover{
     background-color: grey;
     color: brown;
 }
+.dev{
+    /*background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(pexels-veeterzy-303383.jpg);*/
+    display: flex;
+    height: 70vh;
+    background-position: center;
+    padding: 1.5em;
+    flex-direction: row;
+    
+}
+.django h2 {
+    /*text-align: center;*/
+    color: wheat;
+    font-size: 30px;
+
+}
+.django p{
+    color: wheat;
+    font-size: 20px;
+}
+.django{
+    padding: 1.5em;
+    /*overflow: hidden;*/
+    border: 1px solid rgb(7, 7, 7);
+    margin-bottom:  5.5em;
+    margin: 0.5em;
+    flex:1 1 20% 
+}
+.devpic{
+    /*justify-content: center;*/
+    margin: auto;
+    width: 150px;
+    height: 100px;
+}
+.footer{
+    margin-bottom: 5px;
+}
+.footer p{
+    text-align: center;
+    /*height: 20px;*/
+    color: white;
+    font-size: 10px;
+    
+    /*background-color: grey;*/
+}
+
